@@ -1,18 +1,19 @@
 
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls, useGLTF } from "@react-three/drei";
+import { OrbitControls } from "@react-three/drei";
 import { Suspense } from "react";
+import { Color } from "three";
 
 function PlantModel() {
   // Using a basic pot model for now - you can replace this with your own 3D model
   return (
     <mesh position={[0, -1, 0]}>
       <cylinderGeometry args={[1, 1.2, 2, 32]} />
-      <meshStandardMaterial color="#825c3c" />
+      <meshStandardMaterial color={new Color("#825c3c")} />
       {/* Simple plant representation */}
       <mesh position={[0, 1.5, 0]}>
         <sphereGeometry args={[1.2, 32, 32, 0, Math.PI * 2, 0, Math.PI / 2]} />
-        <meshStandardMaterial color="#2d5a27" />
+        <meshStandardMaterial color={new Color("#2d5a27")} />
       </mesh>
     </mesh>
   );
