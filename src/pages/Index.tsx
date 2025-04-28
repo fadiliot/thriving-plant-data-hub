@@ -1,7 +1,6 @@
 
 import Navbar from "@/components/Navbar";
-import PlantPot from "@/components/PlantPot";
-import MoistureChart from "@/components/MoistureChart";
+import Plant3D from "@/components/Plant3D";
 import PlantMetrics from "@/components/PlantMetrics";
 
 const Index = () => {
@@ -21,42 +20,21 @@ const Index = () => {
         
         <div className="grid gap-8 md:grid-cols-2">
           <div className="space-y-6">
-            <h2 className="text-2xl font-semibold">Plants Status</h2>
-            <div className="grid gap-4 sm:grid-cols-2">
-              <PlantPot 
-                name="Kitchen Basil" 
-                moistureLevel={78} 
-                status="high"
-                wateringRecommendation="No watering needed"
-                lastWatered="Today, 9:30 AM" 
-              />
-              <PlantPot 
-                name="Living Room Fern" 
-                moistureLevel={55} 
-                status="optimal"
-                wateringRecommendation="Water in 2 days"
-                lastWatered="Yesterday, 8:15 AM" 
-              />
-              <PlantPot 
-                name="Office Succulent" 
-                moistureLevel={25} 
-                status="low"
-                wateringRecommendation="Water now!"
-                lastWatered="5 days ago" 
-              />
-              <PlantPot 
-                name="Balcony Tomato" 
-                moistureLevel={48} 
-                status="optimal"
-                wateringRecommendation="Water tomorrow"
-                lastWatered="2 days ago" 
-              />
-            </div>
+            <h2 className="text-2xl font-semibold">3D Plant Visualization</h2>
+            <Plant3D />
           </div>
           
           <div className="space-y-6">
-            <h2 className="text-2xl font-semibold">Soil Moisture Analytics</h2>
-            <MoistureChart />
+            <h2 className="text-2xl font-semibold">Plant Status</h2>
+            <div className="p-4 rounded-lg border bg-card">
+              <p className="text-lg font-medium mb-2">Kitchen Basil</p>
+              <div className="text-sm text-muted-foreground">
+                Moisture Level: 78%
+              </div>
+              <div className="text-sm text-muted-foreground">
+                Last Updated: Just now
+              </div>
+            </div>
           </div>
         </div>
       </main>
