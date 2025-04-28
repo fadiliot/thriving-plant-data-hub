@@ -1,5 +1,5 @@
 
-import { Plant } from "lucide-react";
+import { Leaf } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 interface PlantPotProps {
@@ -55,7 +55,7 @@ const PlantPot = ({
         
         {/* Plant */}
         <div className="absolute bottom-16 left-1/2 transform -translate-x-1/2">
-          <Plant 
+          <Leaf 
             className={cn("h-24 w-24 plant-animation", getStatusColor())} 
           />
         </div>

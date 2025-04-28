@@ -1,9 +1,8 @@
-
 import Navbar from "@/components/Navbar";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Button } from "@/components/ui/button";
-import { Plant } from "lucide-react";
+import { Leaf } from "lucide-react";
 
 const Plants = () => {
   return (
@@ -17,7 +16,7 @@ const Plants = () => {
             <p className="text-muted-foreground">Manage and monitor your connected plants</p>
           </div>
           <Button>
-            <Plant className="mr-2 h-4 w-4" />
+            <Leaf className="mr-2 h-4 w-4" />
             Add New Plant
           </Button>
         </div>
@@ -43,7 +42,7 @@ const Plants = () => {
                   </div>
                   {/* Plant */}
                   <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2">
-                    <Plant className="h-16 w-16 plant-animation text-green-500" />
+                    <Leaf className="h-16 w-16 plant-animation text-green-500" />
                   </div>
                 </div>
               </div>
@@ -129,7 +128,7 @@ const Plants = () => {
                   </div>
                   {/* Plant */}
                   <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2">
-                    <Plant className="h-16 w-16 plant-animation text-green-500" />
+                    <Leaf className="h-16 w-16 plant-animation text-green-500" />
                   </div>
                 </div>
               </div>
@@ -210,7 +209,7 @@ const Plants = () => {
                   </div>
                   {/* Plant */}
                   <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2">
-                    <Plant className="h-16 w-16 plant-animation text-amber-500" />
+                    <Leaf className="h-16 w-16 plant-animation text-amber-500" />
                   </div>
                 </div>
               </div>
