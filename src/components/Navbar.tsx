@@ -15,7 +15,7 @@ const Navbar = () => {
         </div>
         <div className="flex flex-1 items-center justify-end space-x-4">
           <nav className="flex items-center space-x-2">
-            <Link to="/">
+            <Link to="/dashboard">
               <Button variant="ghost">Dashboard</Button>
             </Link>
             <Link to="/plants">
@@ -27,7 +27,9 @@ const Navbar = () => {
             <Link to="/setup">
               <Button variant="ghost">Setup Guide</Button>
             </Link>
-            <Button variant="default">Get Started</Button>
+            <Link to="/">
+              <Button variant="default">Home</Button>
+            </Link>
           </nav>
         </div>
       </div>
