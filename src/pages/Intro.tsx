@@ -33,7 +33,7 @@ export default function Intro() {
             </div>
             <div className="rounded-lg overflow-hidden">
               <img
-                src="/lovable-uploads/d6f91ceb-1ddd-44ce-90f1-df0e50c25142.png"
+                src="https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9"
                 alt="Vertical Farming"
                 className="w-full h-auto object-cover rounded-lg"
               />
