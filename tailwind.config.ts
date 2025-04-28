@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -84,11 +85,23 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'plant-sway': {
+					'0%': {
+						transform: 'rotate(0deg)'
+					},
+					'50%': {
+						transform: 'rotate(1deg)'
+					},
+					'100%': {
+						transform: 'rotate(-1deg)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'plant-sway': 'plant-sway 5s ease-in-out infinite alternate'
 			}
 		}
 	},
